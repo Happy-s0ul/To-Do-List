@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Список дел</title>
+    <link rel="icon" type="image/png" href="./src/icon/free-icon-to-do-list-2387635.png"> 
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="mainBlock">
+        <h2>Мой список дел </h2>
+        <div class="inputBlock">
+            <input type="text" id="inputForm" placeholder="Что добавить в список?">
+            <button type="button" id="addBtn">Добавить</button>
+        </div>
+        <div class="buttonBlock">
+            <button type="button" id="delFirstBtn">Удалить первый элемент</button>
+            <button type="button" id="delLastBtn">Удалить последний элемент</button>
+        </div>
+        <div class="settingsText">Настройка внешнего вида</div>
+        <div class="checkboxBlock">
+            <input type="checkbox" id="checkboxEven" checked>
+            <label for="checkboxEven" class="checkboxLabel">Включить/выключить выделение четныех элементов</label>
+        </div>
+        <div class="checkboxBlock">
+            <input type="checkbox" id="checkboxOdd">
+            <label for="checkboxOdd" class="checkboxLabel">Включить/выключить выделение нечетных элементов</label>
+        </div>
+    </div>
+    <ul id="toDoList" class="mainBlock">
+        <li>Купить подарок на День рождения
+            <div class="selfDeletingButton"></div>
+        </li>
+        <li>Купить новый стол
+            <div class="selfDeletingButton"></div>
+        </li>
+        <li>Вытащить друзей на прогулку
+            <div class="selfDeletingButton"></div>
+        </li>
+        <li>Научиться готовить торт
+            <div class="selfDeletingButton"></div>
+        </li>
+        <li>Найти новую работу
+            <div class="selfDeletingButton"></div>
+        </li>
+        <li class="completed">Прочесть "Дюну"
+            <div class="selfDeletingButton"></div>
+        </li>
+    </ul>
+
+    <script src="./src/js/index.js"></script>
+</body>
+
+</html>
